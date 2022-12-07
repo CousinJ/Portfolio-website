@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* 
+=============GENERAL==============
+*/
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'), url(./fonts/Rubik/static/Rubik-Regular.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+  --main-bg-color: rgb(22, 22, 22);
+  --main-margins: 0px;
+  --accent-color-one: #4361EE;
+  --accent-color-two: #4CC9F0;
+  --accent-color-three: rgb(245, 248, 250);
+  --main-font: 'Rubik';
+  --transition:  all 800ms ease
 }
+
+body {
+  background-color: var(--main-bg-color);
+  margin: var(--main-margins);
+}
+
+/* 
+=============TYPOGRAPHY==============
+*/
+/* default text font */
+body {
+  font-family: var(--main-font);
+
+}
+
+
+/* 
+=============TOP==============
+*/
+.nav-bar {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items:flex-end;
+  margin: var(--main-margins);
+  filter: brightness(1.2);
+  
+}
+.name-div {
+  width: 10vw;
+  height: 50px;
+  margin-left: 10px;
+  color: #4361EE;
+}
+.social-icon-container {
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ 
+ 
+   
+}
+.icon-shell {
+  transition: var(--transition);
+  width: 50px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 1.5vw;
+  background-color: var(--main-bg-color);
+  filter: brightness(2.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-shell:hover{
+  background-color: var(--accent-color-two);
+}
+.icon-shell:hover > .social-icon {
+  
+  transform: rotateZ(360deg) rotateY(360deg)
+  scale(1.1);
+ 
+ 
+}
+.social-icon {
+  
+  transition: var(--transition);
+  width: 30px;
+  height: 30px;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+ 
+ 
+}
+
+
+/* 
+=============MID==============
+*/
+.content-div {
+  width: 100vw;
+  height: 100vh;
+  background-color:  var(--main-bg-color);
+  margin: var(--main-margins);
+
+}
+.intro-div {
+  width: 100vw;
+  height: 70vh;
+  background-color: var(--accent-color-one);
+  transform: skewY(4deg);
+  position: relative;
+  ;
+ top: 10vh;
+ border-style: solid;
+}
+
+.projects-div {
+  width: 100vw;
+  height: 70vh;
+  background-color: var(--accent-color-two);
+  transform: skewY(-4deg);
+  position: relative;
+  ;
+ top: 20vh;
+ border-style: solid;
+}
+.blog-div {
+  width: 100vw;
+  height: 50vh;
+ 
+}
+
+
+/* 
+=============BOT==============
+*/
