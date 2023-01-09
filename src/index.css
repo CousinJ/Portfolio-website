@@ -3,20 +3,20 @@
 =============GENERAL==============
 */
 @font-face {
-  font-family: 'Rubik';
-  src: local('Rubik'), url(./fonts/Rubik/static/Rubik-Regular.ttf) format('truetype');
+  font-family: 'Roboto-Mono';
+  src: local('Roboto-Mono'), url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format('truetype');
 }
 
 
 :root {
   --main-bg-color: rgb(22, 22, 22);
   --main-margins: 0px;
-  --accent-color-one: #4362ee;
-  --accent-color-two: #4ccaf0;
+  --accent-color-one: #f3f3f3;
+  --accent-color-two: #e9eaea;
   --accent-color-three: rgb(245, 248, 250);
   --gradient-one: linear-gradient(to right, var(--accent-color-one), var(--accent-color-two));
-  --main-font: 'Rubik';
-  --transition:  all 800ms ease
+  --main-font: 'Roboto-mono';
+  --transition:  all 400ms ease
 }
 
 body {
@@ -54,7 +54,7 @@ body {
   width: 10vw;
   height: 50px;
   margin-left: 10px;
-  color: #4361EE;
+  color: #a21639bc;
   
 }
 .social-icon-container {
@@ -115,11 +115,13 @@ body {
 /* ///////////intro---------- */
 .intro-div {
   width: 100vw;
-  height: 70vh;
- background: linear-gradient(to right, var(--accent-color-one), var(--accent-color-two));
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 90vh;
+ background: url("https://c.pxhere.com/photos/e8/8c/notebook_coffee_table_work_office_computer_laptop_working_space-1283308.jpg!d");
+ background-repeat: no-repeat;
+ background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
  
 
 }
@@ -131,33 +133,29 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: #ffffff;
   
   
 }
-.intro-title {
-  font-size: x-large;
-  background-color: black;
-  margin: 2rem;
-  border-radius: 2rem;
-  border-style: solid;
-  border-color: #1d1d1d;
-}
-.intro-text{
-  
-}
+
+
 .more-about-me {
-  width: 10vw;
-  height: 3vh;
-  background-color: rgb(90, 90, 90);
+  transition: var(--transition);
+  width: 12vw;
+  height: 3.5vh;
+  background-color: rgba(107, 106, 106, 0.274);
   text-align: center;
-  border-style:groove ;
   border-radius: 2rem;
+  user-select: none;
+}
+.more-about-me:hover {
+  scale: 1.02;
+  background-color: rgb(107, 106, 106);
 }
 /* ///////////projects---------- */
 .projects-div {
   width: 100vw;
-  height: 70vh;
+  height: 90vh;
  
   display: flex;
   flex-direction: column;
@@ -244,3 +242,17 @@ text-align: center;
 /* 
 =============BOT==============
 */
+
+
+/* 
+=============HELPERS==============
+*/
+.more-info-main {
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

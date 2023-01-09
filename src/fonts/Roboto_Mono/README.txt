@@ -1,32 +1,32 @@
-Rubik Variable Font
-===================
+Roboto Mono Variable Font
+=========================
 
-This download contains Rubik as both variable fonts and static fonts.
+This download contains Roboto Mono as both variable fonts and static fonts.
 
-Rubik is a variable font with this axis:
+Roboto Mono is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  Rubik-VariableFont_wght.ttf
-  Rubik-Italic-VariableFont_wght.ttf
+  Roboto_Mono/RobotoMono-VariableFont_wght.ttf
+  Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Rubik:
-  static/Rubik-Light.ttf
-  static/Rubik-Regular.ttf
-  static/Rubik-Medium.ttf
-  static/Rubik-SemiBold.ttf
-  static/Rubik-Bold.ttf
-  static/Rubik-ExtraBold.ttf
-  static/Rubik-Black.ttf
-  static/Rubik-LightItalic.ttf
-  static/Rubik-Italic.ttf
-  static/Rubik-MediumItalic.ttf
-  static/Rubik-SemiBoldItalic.ttf
-  static/Rubik-BoldItalic.ttf
-  static/Rubik-ExtraBoldItalic.ttf
-  static/Rubik-BlackItalic.ttf
+in those cases you can use the static font files for Roboto Mono:
+  Roboto_Mono/static/RobotoMono-Thin.ttf
+  Roboto_Mono/static/RobotoMono-ExtraLight.ttf
+  Roboto_Mono/static/RobotoMono-Light.ttf
+  Roboto_Mono/static/RobotoMono-Regular.ttf
+  Roboto_Mono/static/RobotoMono-Medium.ttf
+  Roboto_Mono/static/RobotoMono-SemiBold.ttf
+  Roboto_Mono/static/RobotoMono-Bold.ttf
+  Roboto_Mono/static/RobotoMono-ThinItalic.ttf
+  Roboto_Mono/static/RobotoMono-ExtraLightItalic.ttf
+  Roboto_Mono/static/RobotoMono-LightItalic.ttf
+  Roboto_Mono/static/RobotoMono-Italic.ttf
+  Roboto_Mono/static/RobotoMono-MediumItalic.ttf
+  Roboto_Mono/static/RobotoMono-SemiBoldItalic.ttf
+  Roboto_Mono/static/RobotoMono-BoldItalic.ttf
 
 Get started
 -----------
@@ -67,7 +67,7 @@ Android Apps
 
 License
 -------
-Please read the full license text (OFL.txt) to understand the permissions,
+Please read the full license text (LICENSE.txt) to understand the permissions,
 restrictions and requirements for usage, redistribution, and modification.
 
 You can use them in your products & projects – print or digital,

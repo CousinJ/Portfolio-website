@@ -4,10 +4,10 @@ import Intro from './Intro';
 import Projects from './Projects';
 import Blog from './Blog';
 
-function Content() {
+function Content(props) {
     return(<div className='content-div'>
         
-        <Intro></Intro>
+        <Intro setMoreAboutMeBool={props.setMoreAboutMeBool}></Intro>
         <Projects></Projects>
         <Blog></Blog>
         
