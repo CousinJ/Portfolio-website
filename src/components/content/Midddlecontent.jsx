@@ -7,7 +7,7 @@ import Blog from './Blog';
 function Content(props) {
     return(<div className='content-div'>
         
-        <Intro setMoreAboutMeBool={props.setMoreAboutMeBool}></Intro>
+        <Intro></Intro>
         <Projects></Projects>
         <Blog></Blog>
         
