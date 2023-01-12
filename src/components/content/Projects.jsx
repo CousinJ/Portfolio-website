@@ -29,7 +29,7 @@ function Projects() {
           setSelectedProj(props.project);
         }}
         className="select-list-item"
-        style={{ color: `${styleVar}` }}
+        style={{color: `${styleVar}` }}
       >
         {props.project.name}
       </div>

@@ -7,26 +7,10 @@ import React,{useState} from 'react'
 function Intro(props) {
 
 
-// style-value
-const [styleObject, setStyleValue] = useState(null)
-// popup bool
-
-
-
-
-  //function switching the state of the pop up info AND switching booleans for transition effect
-  function switchPopup() {
-
-    
-    
+function handleClick() {
+    props.setAboutBool(!props.aboutBool)
 }
-//pop component for the more about me section.
-function MoreInfo(props) {
-    return(<div  className='more-info-main'>
-        <div onClick={switchPopup} className='x-button'></div>
-    </div>)
 
-}
 
 
     return(<div className='intro-div'>
@@ -40,12 +24,11 @@ function MoreInfo(props) {
                     
                 </div>
              
-                <div onClick={switchPopup} className='more-about-me'>more about me</div>
+                <div onClick={handleClick} className='more-about-me'>more about me</div>
                 
             </div>
 
-            <MoreInfo />
-
+            
     </div>)
 }
 
