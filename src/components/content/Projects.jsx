@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 //import project pictures
-import project_img_one from "../../assets/assassin.png";
-import project_img_two from "../../assets/duelist.png";
-import project_img_three from "../../assets/rogue.png";
-import project_img_four from "../../assets/druid.png";
+import project_img_one from "../../assets/cryptoworld-project-image.png";
+import project_img_two from "../../assets/omens-project-image.png";
+import project_img_three from "../../assets/ytCommentApp-project-image.png";
+
+
+
 
 function Projects() {
   //PROJECT DATA HERE
@@ -11,7 +13,7 @@ function Projects() {
     { name: "project1", img: project_img_one, info: "this project is so cool" },
     { name: "project2", img: project_img_two, info: "I love this project" },
     { name: "project3", img: project_img_three, info: 'I hate this one!' },
-    { name: "project4", img: project_img_four, info: 'So so so awesome' },
+   
   ];
 
   const [selectedProj, setSelectedProj] = useState(project_data[0]);
@@ -52,7 +54,7 @@ function Projects() {
         <ProjectItemSelector project={project_data[0]}></ProjectItemSelector>
         <ProjectItemSelector project={project_data[1]}></ProjectItemSelector>
         <ProjectItemSelector project={project_data[2]}></ProjectItemSelector>
-        <ProjectItemSelector project={project_data[3]}></ProjectItemSelector>
+       
       </div>
       <div className="project-pic-text">
         <ProjectDetails></ProjectDetails>
