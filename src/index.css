@@ -12,8 +12,8 @@
   --main-bg-color: rgb(22, 22, 22);
   --main-margins: 0px;
   --accent-color-one: #f3f3f3;
-  --accent-color-two: #e9eaea;
-  --accent-color-three: rgb(245, 248, 250);
+  --accent-color-two: #5467bb;
+  --accent-color-three: rgb(84, 84, 85);
   --gradient-one: linear-gradient(to right, var(--accent-color-one), var(--accent-color-two));
   --main-font: 'Roboto-mono';
   --transition:  all 400ms ease
@@ -22,6 +22,7 @@
 body {
   background-color: var(--main-bg-color);
   margin: var(--main-margins);
+  overflow-x: hidden;
 }
 
 /* 
@@ -54,7 +55,7 @@ body {
   width: 10vw;
   height: 50px;
   margin-left: 10px;
-  color: #a21639bc;
+  color: var(--accent-color-two)
   
 }
 .social-icon-container {
@@ -135,23 +136,26 @@ justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #ffffff;
+  text-align: center;
   
   
 }
 
 
 .more-about-me {
+  margin-top: 1%;
   transition: var(--transition);
   width: 12vw;
   height: 3.5vh;
-  background-color: rgba(107, 106, 106, 0.274);
+  background-color: rgba(59, 59, 59, 0.274);
   text-align: center;
   border-radius: 2rem;
   user-select: none;
+  color:var(--accent-color-two)
 }
 .more-about-me:hover {
   scale: 1.02;
-  background-color: rgb(107, 106, 106);
+  background-color: rgb(73, 72, 72);
 }
 /* ///////////projects---------- */
 .projects-div {
@@ -163,44 +167,81 @@ justify-content: center;
  
 }
 .project-select {
-width: inherit;
+width: 100vw;
 height:10vh ;
 background-color: var(--main-bg-color);
 filter: brightness(1.5);
 display: flex;
 align-items: center;
 justify-content: center;
+user-select: none;
 
 
 }
 .select-list-item {
 margin: 2rem;
+transition: all 200ms ease;
+padding: 9px;
+
+
+
 }
+.select-list-item:hover {
+  padding: 9px;
+  margin: 2rem;
+  border-width: 5px;
+  border-color: var(--accent-color-two);
+  border-style: solid;
+  
+  
+  }
 .project-pic-text {
   width: inherit;
   height:50vh ;
   display: flex;
   justify-content: center;
   
+  
 }
 .project-details {
-  width: 80vw;
+  width: 100vw;
   height: inherit;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+ 
+
+  
+  
+  
 }
 .project-image {
 width: 40vw;
-height: inherit;
+height: 40vh;
 background-repeat: no-repeat;
 background-size: contain;
+border-style: solid;
+border-width: 3px;
+border-color: #d1c5c5;
+
+
 }
 .project-about {
-  width: 40vw;
+  width: 30vw;
   height: inherit;
-  background-color: #d1c5c5;
+ color: white;
   border-radius: 2rem;
   display: flex;
+  align-items: center;
   justify-content: center;
+  
+}
+.link-container {
+  display: flex;
+ justify-content: space-evenly;
+  flex-direction: column;
+  
+  height: 100px;
 }
 .project-tech-link {
   width: inherit;
@@ -208,38 +249,74 @@ background-size: contain;
   background-color: var(--main-bg-color);
  filter: brightness(1.9);
 }
-/* ///////////blog---------- */
-.blog-div {
+/* ///////////CONTACT---------- */
+.contact-div {
+  color: white;
   width: 100vw;
   height: 50vh;
  background-color: var(--main-bg-color);
  display: flex;
- align-items: center;
- justify-content: center;
+
 }
-.blog-inner {
-  width: 80vw;
-  height: 40vh;
- background: linear-gradient(to right, var(--accent-color-one), var(--accent-color-two));
-  border-radius: 2rem;
+.contact-left {
+  margin-left:50px;
+  width: 50%;
+  height: inherit;
+  
+  
+}
+
+.contact-right {
+  width: 50%;
+  height: inherit;
+ 
+  display: flex;;
+  align-items: center;
+  justify-content:center ;
+}
+
+.contact-form {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content:flex-start;
+  width: 90%;
+  height: 300px;
+  background-color: rgb(54, 53, 53);
+  border-radius: 20px;
+  
+
 }
-.blog-title {
-padding: 2rem;
-font-size: xx-large;
+.name-input {
+  width: 60%;
+  font: var(--main-font);
 }
-.blog-description {
-text-align: center;
+.email-input {
+  width: 60%;
+  font: var(--main-font);
 }
-.blog-button {
-  width: 5vw;
-  height: 3vh;
-  background-color: #1d1d1d;
-  margin: 2rem;
-  align-self: center;
+.message-input {
+  width: 80%;
+  height: 40%;
+  font: var(--main-font);
+ overflow-y: scroll;
+ 
 }
+.submit-contact-btn {
+  font: var(--main-font);
+  width: auto;
+  margin: 5%;
+  transition: all 200ms ease;
+  
+}
+.submit-contact-btn:hover {
+  font: var(--main-font);
+  width: auto;
+  margin: 5%;
+  color: var(--accent-color-two);
+  background-color: var(--main-bg-color);
+}
+
 /* 
 =============BOT==============
 */
