@@ -10,21 +10,21 @@ function Projects() {
     {
       name: "Crypto World",
       img: project_img_one,
-      ghLink: '/' ,
-      ytLink: '/' ,
+      ghLink: 'https://github.com/CousinJ/capstoneProject' ,
+      ytLink: 'https://www.youtube.com/watch?v=-BHlpBO3ybA&t=11s' ,
       info: "This was my first project at Devmountain. I created a site that can simulate crypto trading with real time prices of coins. I used the Coinbase API to access the realtime prices of the coins and stored user data in a postgres SQL database. ",
     },
     {
       name: "Omens",
       img: project_img_two,
-      ghLink: '/' ,
-      ytLink: '/' ,
+      ghLink: 'https://github.com/CousinJ/Omens-game' ,
+      ytLink: 'https://www.youtube.com/watch?v=1lYIY6XpBbI&t=76s' ,
       info: "For my second and final project at Devmountain, I created a multiplayer game using sockets with react. It is a mafia like guessing game where four players or more can vote out the imposter of the group. ",
     },
     {
       name: "Youtube Comment Sorter",
       img: project_img_three,
-      ghLink:'/' ,
+      ghLink:'https://github.com/CousinJ/comment_analysis_project' ,
       info: "Using the Youtube v3 data api, I created a web app with only python and the flask framework to extract the comments from any given video that the user chooses and run analytics to sort the most liked comments on the video. The ",
     },
   ];

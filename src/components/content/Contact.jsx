@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import axios from 'axios';
 
 function Contact() {
 
+const [formData, setFormData] = useState({name: '', email: '', message: ''});
 
+const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value})
+    
+}
+
+function handleSubmit(e) {
+    e.preventDefault();
+    axios.post('http://localhost:4000/contact', formData).then((res) => {console.log(res.data); setFormData({name: '', email: '', message: ''}); e.target.reset()}).catch((err) => {console.log(err)});
+    
+
+}
   
 
     return(<div className="contact-div">
@@ -14,16 +26,16 @@ function Contact() {
             
         </div>
         <div className="contact-right">
-                <form className="contact-form">
+                <form onSubmit={handleSubmit} className="contact-form">
                     name
-                    <input name="name" className="name-input" placeholder="enter your name"></input>
+                    <input onChange={handleChange} name="name" className="name-input" placeholder="enter your name"></input>
                     email
-                    <input name="email" className="email-input" placeholder="enter your email"></input>
+                    <input onChange={handleChange}  name="email" className="email-input" placeholder="enter your email"></input>
                     message
-                    <textarea name="message" className="message-input" placeholder="enter your message" ></textarea>
+                    <textarea onChange={handleChange} name="message" className="message-input" placeholder="enter your message" ></textarea>
                     
                     
-                    <button  className="submit-contact-btn" type="submit">Submit</button>
+                    <button   className="submit-contact-btn" type="submit">Submit</button>
                     
                 </form>
         </div>
