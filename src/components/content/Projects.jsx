@@ -25,7 +25,7 @@ function Projects() {
       name: "Youtube Comment Sorter",
       img: project_img_three,
       ghLink:'https://github.com/CousinJ/comment_analysis_project' ,
-      info: "Using the Youtube v3 data api, I created a web app with only python and the flask framework to extract the comments from any given video that the user chooses and run analytics to sort the most liked comments on the video. The ",
+      info: "Using the Youtube v3 data api, I created a web app with only python and the flask framework to extract the comments from any given video that the user chooses and run analytics to sort the most liked comments on the video. ",
     },
   ];
 
@@ -34,7 +34,7 @@ function Projects() {
   //for each project, a project item selector...
   function ProjectItemSelector(props) {
     if (props.project.name === selectedProj.name) {
-      styleVar = "#5467bb";
+      styleVar = "#6d36d3";
     } else {
       styleVar = "white";
     }
@@ -73,6 +73,9 @@ function Projects() {
   //=======================================================================================================================================================
   return (
     <div className="projects-div">
+       <div className="title-bar">
+        <h1>My Projects</h1>
+       </div>
       <div className="project-select">
         <ProjectItemSelector project={project_data[0]}></ProjectItemSelector>
         <ProjectItemSelector project={project_data[1]}></ProjectItemSelector>
@@ -82,7 +85,9 @@ function Projects() {
         <ProjectDetails></ProjectDetails>
       </div>
 
-      <div className="project-tech-link"></div>
+      <div className="title-bar">
+        <h1>Contact Me</h1>
+      </div>
     </div>
   );
 }

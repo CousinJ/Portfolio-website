@@ -12,7 +12,7 @@ const handleChange = (e) => {
 
 function handleSubmit(e) {
     e.preventDefault();
-    axios.post('http://localhost:4000/contact', formData).then((res) => {console.log(res.data); setFormData({name: '', email: '', message: ''}); e.target.reset()}).catch((err) => {console.log(err)});
+    axios.post('https://jasondavis.website/contact', formData).then((res) => {console.log(res.data); setFormData({name: '', email: '', message: ''}); e.target.reset()}).catch((err) => {console.log(err)});
     
 
 }
@@ -21,8 +21,9 @@ function handleSubmit(e) {
     return(<div className="contact-div">
 
         <div className="contact-left">
-            <h1>Contact me</h1>
-            <p>Lets work together! I am always looking for new oppurtunitys to learn more technology and further my skills.  </p>
+
+            <h2 className="contact-item">Let's Work Together!</h2>
+            <p className="contact-item"> I am always looking for new oppurtunities to learn more technology and further my skills.  </p>
             
         </div>
         <div className="contact-right">

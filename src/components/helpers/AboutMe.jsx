@@ -34,13 +34,19 @@ function AboutMe(props) {
           ></div>
         </div>
         <div className="text">
-          <div  className="header-1">Jason Davis</div>
+          <div className="header-1">Jason Davis</div>
           <div className="header-2">web developer</div>
-          <p>
-            hey there! my name is jason, I am a programmer from the salt lake
-            metro area. I love coding and have a passion for it and love to
-            engineer new ways to solve problems. Take a look at some of my
-            projects to get a feel for what I like to build
+          <p className="text-small">
+            My name is Jason, I am 22 years old, from North Salt Lake Utah. Out
+            of my many hobbies some of my favorites are snowboarding, mountain
+            biking, playing guitar, and game development! My favorite band is Led
+            Zeppelin or Tame Impala, and my favorite video game is Dark Souls.
+            My love for video games, primarily RPGs, is what initially gave me
+            the curiosity to found out how they are made. From there I learned
+            to code and now programming is part of the many things I like to do.
+            Another interest I have had since a young boy is entrepreneurship. I
+            work to one day be an entrepreneur in the tech industry. I love the
+            progression of technology and want to contribute to it.
           </p>
         </div>
       </div>

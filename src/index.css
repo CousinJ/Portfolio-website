@@ -12,7 +12,7 @@
   --main-bg-color: rgb(22, 22, 22);
   --main-margins: 0px;
   --accent-color-one: #f3f3f3;
-  --accent-color-two: #5467bb;
+  --accent-color-two: #6d36d3;
   --accent-color-three: rgb(84, 84, 85);
   --gradient-one: linear-gradient(to right, var(--accent-color-one), var(--accent-color-two));
   --main-font: 'Roboto-mono';
@@ -32,6 +32,10 @@ body {
 body {
   font-family: var(--main-font);
 
+}
+h1 {
+  color: var(--accent-color-two);
+  
 }
 
 
@@ -145,17 +149,19 @@ justify-content: center;
 .more-about-me {
   margin-top: 1%;
   transition: var(--transition);
-  width: 12vw;
-  height: 3.5vh;
+  width: 17vw;
+  height: 4vh;
   background-color: rgba(59, 59, 59, 0.274);
   text-align: center;
+
   border-radius: 2rem;
   user-select: none;
   color:var(--accent-color-two)
 }
 .more-about-me:hover {
   scale: 1.02;
-  background-color: rgb(73, 72, 72);
+ background-color: rgb(34, 34, 34);;
+  filter: brightness(1.7);
 }
 /* ///////////projects---------- */
 .projects-div {
@@ -180,16 +186,20 @@ user-select: none;
 }
 .select-list-item {
 margin: 2rem;
-transition: all 200ms ease;
-padding: 9px;
+transition: all 300ms ease;
+
+border-style: solid;
+border-color: var(--main-bg-color);
+padding: 5px;
+
 
 
 
 }
 .select-list-item:hover {
-  padding: 9px;
+  
   margin: 2rem;
-  border-width: 5px;
+  padding: 5px;
   border-color: var(--accent-color-two);
   border-style: solid;
   
@@ -243,11 +253,16 @@ border-color: #d1c5c5;
   
   height: 100px;
 }
-.project-tech-link {
-  width: inherit;
+.title-bar {
+  width: 100vw;
   height:10vh ;
   background-color: var(--main-bg-color);
- filter: brightness(1.9);
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: underline;;
+text-decoration-color: #6d36d3;
+font-size: larger;
 }
 /* ///////////CONTACT---------- */
 .contact-div {
@@ -262,8 +277,12 @@ border-color: #d1c5c5;
   margin-left:50px;
   width: 50%;
   height: inherit;
+ 
   
   
+}
+.contact-item {
+  margin: 50px;
 }
 
 .contact-right {

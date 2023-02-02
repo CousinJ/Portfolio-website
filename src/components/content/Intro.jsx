@@ -15,12 +15,12 @@ function Intro(props) {
         <div className="intro-text">
           <h3>• Full Stack • Web Developer • Data Analyst </h3>
         </div>
-        I am a software developer from the Salt Lake area. My languagle
-        expertise are in JavaScript, Python, and C# which I use extensively to
-        develop web apps using different frameworks, most notably, react. I love
-        designing and programming websites, games and working with data.
+        I am a software developer from the Salt Lake area with a passion for
+        creating new technology. As a full stack developer, I work primarily with
+        JavaScript and Python. I love learning new technologies to further my
+        skills as a developer, and test the limits of what I can build with code.
         <div onClick={handleClick} className="more-about-me">
-          more about me
+          More About Me
         </div>
       </div>
     </div>

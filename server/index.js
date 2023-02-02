@@ -1,14 +1,17 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
 
 const mongoose = require("mongoose");
 
-const port = 4000;
-const DB_URL = "mongodb://localhost:27017/";
+
+const DB_URL = process.env.DB_URL;
+
+ 
 const messageModel = require("./models/message");
 
 //listen for post requests for messages from the user
@@ -44,6 +47,6 @@ mongoose.connect(DB_URL, () => {
   console.log("MONGO DB CONNECTED");
 });
 
-app.listen(port, (req, res) => {
-  console.log(`Server running on ${port}`);
+app.listen(process.env.PORT || 3001, (req, res) => {
+  console.log(`Server running `);
 });

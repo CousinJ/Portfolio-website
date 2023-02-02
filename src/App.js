@@ -19,7 +19,9 @@ const [aboutBool, setAboutBool] = useState(false);
     <div className="App">
       <Bar></Bar>
      <Middlecontent aboutBool={aboutBool} setAboutBool={setAboutBool}></Middlecontent>
+     
      <AboutMe setAboutBool={setAboutBool} aboutBool={aboutBool}></AboutMe>
+    
     </div>
   );
 }
