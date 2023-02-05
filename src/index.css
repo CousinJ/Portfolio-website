@@ -290,51 +290,25 @@ font-size: larger;
   height: inherit;
  
   display: flex;;
+  flex-direction: column;
   align-items: center;
   justify-content:center ;
 }
 
-.contact-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-  height: 300px;
-  background-color: rgb(54, 53, 53);
-  border-radius: 20px;
-  
+.contact-details {
+  margin: auto;
+width: 80%;
+height: 50px;
+background-color: grey;
+display: flex;
+}
 
-}
-.name-input {
-  width: 60%;
-  font: var(--main-font);
-}
-.email-input {
-  width: 60%;
-  font: var(--main-font);
-}
-.message-input {
+.link-or-email-div {
   width: 80%;
-  height: 40%;
-  font: var(--main-font);
- overflow-y: scroll;
- 
+  height: inherit;
+  background-color: #6d36d3;
 }
-.submit-contact-btn {
-  font: var(--main-font);
-  width: auto;
-  margin: 5%;
-  transition: all 200ms ease;
-  
-}
-.submit-contact-btn:hover {
-  font: var(--main-font);
-  width: auto;
-  margin: 5%;
-  color: var(--accent-color-two);
-  background-color: var(--main-bg-color);
-}
+
 
 /* 
 =============BOT==============

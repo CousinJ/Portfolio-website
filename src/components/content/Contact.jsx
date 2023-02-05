@@ -1,48 +1,65 @@
-import React, {useState} from "react";
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
+
+
+
+import linkedin_icon from "../../assets/linkedin-svgrepo-com.svg";
+import github_icon from "../../assets/github-svgrepo-com.svg";
+import email_icon from "../../assets/email-9-svgrepo-com.svg";
+
+
+
+
+
 
 function Contact() {
+  return (
+    <div className="contact-div">
+      <div className="contact-left">
+        <h2 className="contact-item">Let's Work Together!</h2>
+        <p className="contact-item">
+          {" "}
+          I am always looking for new oppurtunities to learn more technology and
+          further my skills.{" "}
+        </p>
+      </div>
+      <div className="contact-right">
+        <div className="contact-details">
+            <div className="icon-shell">
+            <div
+            className="social-icon"
+            style={{ backgroundImage: `url(${linkedin_icon})` }}
+          ></div>
+            </div>
+          
+            <div className="link-or-email-div"></div>
 
-const [formData, setFormData] = useState({name: '', email: '', message: ''});
-
-const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value})
-    
-}
-
-function handleSubmit(e) {
-    e.preventDefault();
-    axios.post('https://jasondavis.website/contact', formData).then((res) => {console.log(res.data); setFormData({name: '', email: '', message: ''}); e.target.reset()}).catch((err) => {console.log(err)});
-    
-
-}
-  
-
-    return(<div className="contact-div">
-
-        <div className="contact-left">
-
-            <h2 className="contact-item">Let's Work Together!</h2>
-            <p className="contact-item"> I am always looking for new oppurtunities to learn more technology and further my skills.  </p>
-            
         </div>
-        <div className="contact-right">
-                <form onSubmit={handleSubmit} className="contact-form">
-                    name
-                    <input onChange={handleChange} name="name" className="name-input" placeholder="enter your name"></input>
-                    email
-                    <input onChange={handleChange}  name="email" className="email-input" placeholder="enter your email"></input>
-                    message
-                    <textarea onChange={handleChange} name="message" className="message-input" placeholder="enter your message" ></textarea>
-                    
-                    
-                    <button   className="submit-contact-btn" type="submit">Submit</button>
-                    
-                </form>
+        <div className="contact-details">
+            <div className="icon-shell">
+            <div
+            className="social-icon"
+            style={{ backgroundImage: `url(${github_icon})` }}
+          ></div>
+            </div>
+         
+            <div className="link-or-email-div"></div>
+
         </div>
+        <div className="contact-details">
+            <div className="icon-shell">
+            <div
+            className="social-icon"
+            style={{ backgroundImage: `url(${email_icon})` }}
+          ></div>
+            </div>
 
-
-    </div>)
+            <div className="link-or-email-div"></div>
+          
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Contact;
