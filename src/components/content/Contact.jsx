@@ -25,36 +25,42 @@ function Contact() {
       </div>
       <div className="contact-right">
         <div className="contact-details">
-            <div className="icon-shell">
+            <div className="icon-shell-cnct">
             <div
             className="social-icon"
             style={{ backgroundImage: `url(${linkedin_icon})` }}
           ></div>
             </div>
           
-            <div className="link-or-email-div"></div>
+            <div className="link-or-email-div">
+            <a className="a-tag-contact" href="https://github.com/CousinJ">https://github.com/CousinJ</a>
+            </div>
 
         </div>
         <div className="contact-details">
-            <div className="icon-shell">
+            <div className="icon-shell-cnct">
             <div
             className="social-icon"
             style={{ backgroundImage: `url(${github_icon})` }}
           ></div>
             </div>
          
-            <div className="link-or-email-div"></div>
+            <div className="link-or-email-div">
+                <a className="a-tag-contact" href="https://www.linkedin.com/in/jason-davis-a4a80724a/">https://www.linkedin.com/in/jason-davis</a>
+            </div>
 
         </div>
         <div className="contact-details">
-            <div className="icon-shell">
+            <div className="icon-shell-cnct">
             <div
             className="social-icon"
             style={{ backgroundImage: `url(${email_icon})` }}
           ></div>
             </div>
 
-            <div className="link-or-email-div"></div>
+            <div className="link-or-email-div">
+                jasoncodes@jasondavis.website
+            </div>
           
         </div>
       </div>
